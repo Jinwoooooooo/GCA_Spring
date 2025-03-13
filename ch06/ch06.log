@@ -6948,3 +6948,31 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for l
 2025-03-13T12:18:27.080+09:00  INFO 4376 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
 2025-03-13T12:18:27.083+09:00  INFO 4376 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.374 seconds (process running for 91.951)
 2025-03-13T12:18:27.084+09:00  INFO 4376 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-13T12:23:03.540+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T12:23:03.540+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T12:23:03.540+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T12:23:03.541+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-13T12:23:03.553+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5221412a
+2025-03-13T12:23:03.553+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-13T12:29:35.521+09:00  INFO 4376 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (1 addition, 0 deletions, 13 modifications)
+2025-03-13T12:29:35.523+09:00  INFO 4376 --- [ch06] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T12:29:35.590+09:00  INFO 4376 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T12:29:35.592+09:00  INFO 4376 --- [ch06] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-13T12:29:35.594+09:00  INFO 4376 --- [ch06] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-13T12:29:35.651+09:00  INFO 4376 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 4376 (C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06\build\classes\java\main started by lotte06 in C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06)
+2025-03-13T12:29:35.651+09:00  INFO 4376 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T12:29:35.845+09:00  INFO 4376 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T12:29:35.846+09:00  INFO 4376 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T12:29:35.846+09:00  INFO 4376 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T12:29:35.857+09:00  INFO 4376 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T12:29:35.857+09:00  INFO 4376 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2025-03-13T12:29:35.897+09:00  INFO 4376 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-13T12:29:35.953+09:00  INFO 4376 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T12:29:35.960+09:00  INFO 4376 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2025-03-13T12:29:35.963+09:00  INFO 4376 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.332 seconds (process running for 760.844)
+2025-03-13T12:29:35.964+09:00  INFO 4376 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-13T12:49:00.958+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T12:49:00.958+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T12:49:00.959+09:00  INFO 4376 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T14:03:16.507+09:00  INFO 4376 --- [ch06] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T14:03:16.568+09:00  INFO 4376 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

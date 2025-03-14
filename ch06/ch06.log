@@ -124,3 +124,34 @@
 2025-03-14T10:05:46.807+09:00  INFO 4120 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2025-03-14T10:05:46.934+09:00  INFO 4120 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-14T10:05:46.989+09:00  INFO 4120 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:16:30.270+09:00  INFO 12560 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Starting User1ServiceTest using Java 17.0.12 with PID 12560 (started by lotte06 in C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06)
+2025-03-14T10:16:30.272+09:00  INFO 12560 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:16:31.387+09:00  INFO 12560 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:16:31.701+09:00  INFO 12560 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Started User1ServiceTest in 1.699 seconds (process running for 2.78)
+2025-03-14T10:16:32.414+09:00  INFO 12560 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:16:32.689+09:00  INFO 12560 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53b2e1eb
+2025-03-14T10:16:32.692+09:00  INFO 12560 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:16:32.767+09:00  INFO 12560 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:16:32.770+09:00  INFO 12560 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:30:50.227+09:00  INFO 10120 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 10120 (started by lotte06 in C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06)
+2025-03-14T10:30:50.230+09:00  INFO 10120 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:30:51.375+09:00  INFO 10120 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:30:51.695+09:00  INFO 10120 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:30:51.696+09:00  INFO 10120 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:30:51.697+09:00  INFO 10120 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:30:51.729+09:00  INFO 10120 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.808 seconds (process running for 2.891)
+2025-03-14T10:39:24.951+09:00  INFO 6156 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 6156 (started by lotte06 in C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06)
+2025-03-14T10:39:24.952+09:00  INFO 6156 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:39:26.040+09:00  INFO 6156 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:39:26.348+09:00  INFO 6156 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:39:26.349+09:00  INFO 6156 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:39:26.350+09:00  INFO 6156 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:39:26.385+09:00  INFO 6156 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.729 seconds (process running for 2.804)
+2025-03-14T10:40:56.281+09:00  INFO 7836 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 7836 (started by lotte06 in C:\Users\lotte06\Desktop\workspace\GCA_Spring\ch06)
+2025-03-14T10:40:56.283+09:00  INFO 7836 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:40:57.367+09:00  INFO 7836 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:40:57.686+09:00  INFO 7836 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:40:57.686+09:00  INFO 7836 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:40:57.688+09:00  INFO 7836 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-14T10:40:57.719+09:00  INFO 7836 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 1.732 seconds (process running for 2.793)
+2025-03-14T10:40:58.464+09:00  WARN 7836 --- [ch06] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>user1::list</title>
+</head>
+<body>
+<h3>user1 목록</h3>
+<a th:href="@{/}">처음으로</a>
+<a th:href="@{/user1/register}">등록하기</a>
+<table border="1">
+  <tr>
+    <th>아이디</th>
+    <th>이름</th>
+    <th>휴대폰</th>
+    <th>나이</th>
+    <th>관리</th>
+  </tr>
+  <tr th:each="user1:${user1DTOList}">
+    <td>[[${user1.uid}]]</td>
+    <td>[[${user1.name}]]</td>
+    <td th:text="${user1.hp}">휴대폰</td>
+    <td th:text="${user1.age}">나이</td>
+    <td>
+      <a th:href="@{/user1/modify(uid=${user1.uid})}">수정</a>
+      <a th:href="@{/user1/delete(uid=${user1.uid})}">삭제</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

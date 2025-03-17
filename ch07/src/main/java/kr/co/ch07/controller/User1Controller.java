@@ -54,7 +54,7 @@ public class User1Controller {
         return "/user1/modify";
     }
     @PostMapping("/user1/modify")
-    public String modify(User1DTO dto, Model model) {
+    public String modify(User1DTO dto) {
 
         // 서비스 호출
         service.modify(dto);

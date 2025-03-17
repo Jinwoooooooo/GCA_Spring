@@ -1,11 +1,14 @@
 package kr.co.ch07.repository;
 
+import kr.co.ch07.entity.Child;
+import kr.co.ch07.entity.Parent;
 import kr.co.ch07.entity.User1;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -201,5 +204,57 @@ class User1RepositoryTest {
         int user1 = user1Repository.countUser1ByName(name);
 
         System.out.println(user1);
+    }
+
+    @Test
+    void selectUser1UnderAge30() {
+        List<User1> user1 = user1Repository.selectUser1UnderAge30();
+        System.out.println(user1);
+    }
+
+    @Test
+    void selectUser1ByName() {
+        String name = "팜하니";
+        List<User1> user1 = user1Repository.selectUser1ByName(name);
+        System.out.println(user1);
+    }
+
+    @Test
+    void selectUser1ByNameParam() {
+        String name = "팜하니";
+        List<User1> user1 = user1Repository.selectUser1ByNameParam(name);
+        System.out.println(user1);
+    }
+
+    @Test
+    void selectUser1ByUid() {
+        String selectId = "pham22";
+        List<Object[]> user1List = user1Repository.selectUser1ByUid(selectId);
+
+        for (Object[] o : user1List) {
+            String uid = (String) o[0];
+            String name = (String) o[1];
+            Integer age = (Integer) o[2];
+
+            System.out.println("UID: " + uid + ", Name: " + name + ", Age: " + age);
+        }
+    }
+
+    @Test
+    void selectAllParentWithChild() {
+        //given
+        String pid = "p101";
+
+        //when
+        List<Object[]> list = user1Repository.selectAllParentWithChild(pid);
+
+        //then
+        for (Object[] o : list) {
+            Parent parent = (Parent) o[0];
+            Child child = (Child) o[1];
+
+            System.out.println(parent);
+            System.out.println(child);
+        }
     }
 }

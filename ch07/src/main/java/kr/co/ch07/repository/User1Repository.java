@@ -2,6 +2,8 @@ package kr.co.ch07.repository;
 
 import kr.co.ch07.entity.User1;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import javax.swing.text.html.parser.Entity;
@@ -35,4 +37,25 @@ public interface User1Repository extends JpaRepository<User1, String> {
     public List<User1> findUser1ByAgeGreaterThanOrderByAgeDesc(int age);
 
     public int countUser1ByName(String name);
+
+    // JPQL
+    @Query("SELECT u1 FROM User1 AS u1 WHERE u1.age <= 30")
+    public List<User1> selectUser1UnderAge30();
+
+    @Query("SELECT u1 FROM User1 AS u1 WHERE u1.name = ?1")
+    public List<User1> selectUser1ByName(String name);
+
+    @Query("SELECT u1 FROM User1 AS u1 WHERE u1.name = :name")
+    public List<User1> selectUser1ByNameParam(@Param("name") String name);
+
+    @Query("SELECT u1.uid, u1.name, u1.age FROM User1 AS u1 WHERE u1.uid = :uid")
+    public List<Object[]> selectUser1ByUid(@Param("uid") String uid);
+
+    @Query("SELECT p, c FROM Parent AS p " +
+                        "JOIN Child AS c " +
+                        "ON p.pid = c.parent " +
+                        "WHERE p.pid = :pid")
+    public List<Object[]> selectAllParentWithChild(@Param("pid") String pid);
+
+
 }

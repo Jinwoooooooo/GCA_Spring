@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Getter
 @ToString
@@ -18,5 +21,7 @@ public class User {
     private String uid;
     private String name;
     private String hp;
-    private String regDate;
+
+    @CreationTimestamp // MYSQL NOW()
+    private LocalDateTime regDate;
 }

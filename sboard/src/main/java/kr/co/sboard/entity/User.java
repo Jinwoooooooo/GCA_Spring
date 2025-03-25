@@ -1,8 +1,6 @@
 package kr.co.sboard.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -24,7 +22,10 @@ public class User {
     private String nick;
     private String email;
     private String hp;
+
+    @Column(nullable = false)
     private String role;
+
     private String zip;
     private String addr1;
     private String addr2;
@@ -34,4 +35,12 @@ public class User {
     private LocalDateTime regDate;
 
     private String leaveDate;
+
+    @PrePersist
+    public void prePersist(){
+        if(this.role == null){
+            this.role = "USER";
+        }
+    }
+
 }

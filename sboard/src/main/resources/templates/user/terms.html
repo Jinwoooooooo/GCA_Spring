@@ -14,7 +14,7 @@
                 <table border="1">                    
                     <tr>
                         <td>
-                            <textarea name="terms">약관내용</textarea>
+                            <textarea name="terms">[[${termsDTO.terms}]]</textarea>
                             <label><input type="checkbox" class="terms">&nbsp;동의합니다.</label>
                         </td>
                     </tr>
@@ -24,15 +24,15 @@
                 <table border="1">                    
                     <tr>
                         <td>
-                            <textarea name="privacy">약관내용</textarea>
+                            <textarea name="privacy">[[${termsDTO.privacy}]]</textarea>
                             <label><input type="checkbox" class="privacy">&nbsp;동의합니다.</label>
                         </td>
                     </tr>
                 </table>
                 
                 <div>
-                    <a href="./login.html" class="btn btnCancel">취소</a>
-                    <a href="./register.html" class="btn btnNext">다음</a>
+                    <a th:href="@{/user/login}" class="btn btnCancel">취소</a>
+                    <a th:href="@{/user/register}" class="btn btnNext">다음</a>
                 </div>
 
             </section>

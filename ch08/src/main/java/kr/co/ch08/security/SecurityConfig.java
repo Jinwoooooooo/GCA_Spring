@@ -18,11 +18,11 @@ public class SecurityConfig {
 
         // 로그인 설정
         http.formLogin(login -> login
-                .loginPage("/user/login")
-                .defaultSuccessUrl("/")
-                .failureUrl("/user/login?code=100")
-                .usernameParameter("uid")
-                .passwordParameter("pass"));
+                .loginPage("/user/login")                             // 로그인 페이지 URL
+                .defaultSuccessUrl("/")                               // 로그인 성공 시 이동할 경로
+                .failureUrl("/user/login?code=100") // 로그인 실패 시 이동할 경로
+                .usernameParameter("uid")                             // 로그인 폼의 아이디 name="uid"
+                .passwordParameter("pass"));                          // 로그인 폼의 비번 name="pass"
 
         // 로그아웃 설정
         http.logout(logout -> logout

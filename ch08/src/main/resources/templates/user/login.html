@@ -9,6 +9,7 @@
     <a th:href="@{/}">처음으로</a>
     <a th:href="@{/user/register}">회원가입</a>
 
+    <!-- SecurityConfig에 있는 로그인 설정 코드가 내부적으로 post요청을 처리하기 때문에 action을 써줄 필요가 없다. -->
     <form method="post">
         <table border="1">
             <tr>
@@ -23,6 +24,13 @@
                 <td colspan="2" align="right"><input type="submit" value="로그인"></td>
             </tr>
         </table>
+        <!--
+             Spring MVC에서 param.code는 List<String> 형태로 넘어옴. 그래서 param.code == '100'은 비교가 안됨.
+             List == String 비교가 되기 때문에 무조건 false가 나옴. 아래처럼 비교를 해야함.
+        -->
+        <p th:if="${param.code != null and param.code.contains('100')}" style="color:red;">
+            아이디 또는 비밀번호가 틀렸습니다.
+        </p>
     </form>
 </body>
 </html>
